@@ -33,5 +33,13 @@ public class AppSpringDataTest {
 		interfaceSpringDataUser.save(usuarioSpringData);
 		
 	}
-	
+	@Test
+	public void consultarTodos() {
+		Iterable<UsuarioSpringData> lista = interfaceSpringDataUser.findAll();
+		
+		for(UsuarioSpringData usuarios : lista ) {
+			System.out.println(usuarios);
+
+		}
+	}
 }
