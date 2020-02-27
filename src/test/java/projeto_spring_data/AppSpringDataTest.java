@@ -42,4 +42,15 @@ public class AppSpringDataTest {
 
 		}
 	}
+	@Test
+	public void update() {
+		Optional<UsuarioSpringData> usuarioSpringData = interfaceSpringDataUser.findById(3L);
+		
+		UsuarioSpringData user = usuarioSpringData.get();
+		
+		user.setNome("João pereira");
+		
+		interfaceSpringDataUser.save(user);
+		
+	}
 }
