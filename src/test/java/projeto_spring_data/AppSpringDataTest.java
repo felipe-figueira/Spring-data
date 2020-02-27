@@ -58,4 +58,13 @@ public class AppSpringDataTest {
 		interfaceSpringDataUser.deleteById(5l);
 		
 	}
+	@Test
+	public void consultaNome() {
+		List<UsuarioSpringData> list = interfaceSpringDataUser.buscaPorNome("felipe");
+	
+		for(UsuarioSpringData usuarios : list ) {
+			System.out.println(usuarios);
+
+		}
+	}
 }
