@@ -78,4 +78,9 @@ public class AppSpringDataTest {
 		interfaceSpringDataUser.deletePorNome("felipe figueira3");
 	
 	}
+	@Test
+	public void updateEnailPorNome() {
+		interfaceSpringDataUser.updateEmailPorNome("felipeUPDATE@teste.com", "felipe figueira");
+	
+	}
 }
