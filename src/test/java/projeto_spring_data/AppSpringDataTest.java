@@ -53,4 +53,9 @@ public class AppSpringDataTest {
 		interfaceSpringDataUser.save(user);
 		
 	}
+	@Test
+	public void delete() {
+		interfaceSpringDataUser.deleteById(5l);
+		
+	}
 }
